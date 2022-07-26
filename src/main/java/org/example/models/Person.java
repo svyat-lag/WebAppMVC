@@ -1,25 +1,34 @@
 package org.example.models;
 
+import jakarta.persistence.*;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
+@Entity
+@Table(name = "Person")
 public class Person {
+    @Id
+    @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotEmpty(message = "Name can not be empty!")
     @Size(min = 2, max = 30, message = "Name should be between 2 and 30 characters!")
+    @Column(name = "Name")
     private String name;
     @Min(value = 0, message = "Age can not be less then zero!")
+    @Column(name = "Age")
     private int age;
     @NotEmpty(message = "Email can not be empty!")
     @Email(message = "Seams like this email doesn't exist")
+    @Column(name = "Email")
     private String email;
 
     public Person() {}
 
-    public Person(int id, String name, int age, String email) {
-        this.id = id;
+    public Person(String name, int age, String email) {
         this.name = name;
         this.age = age;
         this.email = email;

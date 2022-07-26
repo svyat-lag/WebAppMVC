@@ -9,12 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dac20a18-62ba-4561-977d-bb209c624daf" name="Changes" comment="Change arrayList to JDBC Connector">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonMapper.java" afterDir="false" />
+    <list default="true" id="dac20a18-62ba-4561-977d-bb209c624daf" name="Changes" comment="Change JDBC Connector to JDBC Template">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/PersonValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be6f107e-5adb-4245-a482-a39d5d0244c4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be6f107e-5adb-4245-a482-a39d5d0244c4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "PVS-Studio.Settings",
-    "spring.configuration.checksum": "e2c2109c219ad2af195ad6662f5b0dd1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/svyat/IdeaProjects/WebAppMVC&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;PVS-Studio.Settings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e2c2109c219ad2af195ad6662f5b0dd1&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\svyat\IdeaProjects\WebAppMVC\src\main\webapp\WEB-INF\views\first" />
@@ -176,7 +181,12 @@
       <workItem from="1657442787791" duration="3880000" />
       <workItem from="1657446727798" duration="17085000" />
       <workItem from="1658138312898" duration="4638000" />
-      <workItem from="1658143014785" duration="18100000" />
+      <workItem from="1658143014785" duration="27396000" />
+      <workItem from="1658562125354" duration="1568000" />
+      <workItem from="1658730385932" duration="5028000" />
+      <workItem from="1658743297843" duration="1257000" />
+      <workItem from="1658750102978" duration="847000" />
+      <workItem from="1658836031397" duration="8914000" />
     </task>
     <task id="LOCAL-00001" summary="Change arrayList to JDBC Connector">
       <created>1658211674696</created>
@@ -185,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658211674696</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Change JDBC Connector to JDBC Template">
+      <created>1658213931136</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658213931136</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +221,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change arrayList to JDBC Connector" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change arrayList to JDBC Connector" />
+    <MESSAGE value="Change JDBC Connector to JDBC Template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change JDBC Connector to JDBC Template" />
   </component>
 </project>
