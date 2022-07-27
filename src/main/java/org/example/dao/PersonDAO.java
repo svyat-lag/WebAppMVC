@@ -37,9 +37,9 @@ public class PersonDAO {
     public Optional<Person> show(String email, int id) {
         Session session = sessionFactory.getCurrentSession();
         return session.createQuery(
-                "select p from Person p where p.email=:email and p.id=:id", Person.class)
-                .setParameter("email", email)
-                .setParameter("id", id)
+                "select p from Person p where p.email=:Email and not p.id=:ID", Person.class)
+                .setParameter("Email", email)
+                .setParameter("ID", id)
                 .stream()
                 .findAny();
     }

@@ -1,7 +1,8 @@
 package org.example.util;
 
-import org.example.dao.PersonDAO;
 import org.example.models.Person;
+import org.example.repositories.PeopleRepository;
+import org.example.services.PeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
@@ -9,14 +10,11 @@ import org.springframework.validation.Validator;
 
 @Component
 public class PersonValidator implements Validator {
-    private PersonDAO personDAO;
-
-    public PersonValidator() {
-    }
+    private final PeopleService peopleService;
 
     @Autowired
-    public PersonValidator(PersonDAO personDAO) {
-        this.personDAO = personDAO;
+    public PersonValidator(PeopleService peopleService) {
+        this.peopleService = peopleService;
     }
 
     @Override
@@ -31,7 +29,7 @@ public class PersonValidator implements Validator {
         if (!Character.isUpperCase(person.getName().charAt(0)))
             errors.rejectValue("name", "", "The name should starts with a capital letter");
 
-        if (personDAO.show(person.getEmail(), person.getId()).isPresent())
+        if (peopleService.findOne(person.getId(), person.getEmail()).isPresent())
             errors.rejectValue("email", "", "This email is already in use");
     }
 }

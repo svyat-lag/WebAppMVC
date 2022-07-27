@@ -9,12 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dac20a18-62ba-4561-977d-bb209c624daf" name="Changes" comment="Change JDBC Template to Hibernate (error)">
+    <list default="true" id="dac20a18-62ba-4561-977d-bb209c624daf" name="Changes" comment="Change JDBC Template to Hibernate">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/PeopleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/services/PeopleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/PersonValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -198,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658213931136</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change JDBC Template to Hibernate">
+      <created>1658906571780</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658906571780</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +229,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change arrayList to JDBC Connector" />
     <MESSAGE value="Change JDBC Connector to JDBC Template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change JDBC Connector to JDBC Template" />
+    <MESSAGE value="Change JDBC Template to Hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change JDBC Template to Hibernate" />
   </component>
 </project>
