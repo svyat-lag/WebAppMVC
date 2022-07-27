@@ -38,6 +38,8 @@ public class PersonDAO {
         Session session = sessionFactory.getCurrentSession();
         return session.createQuery(
                 "select p from Person p where p.email=:email and p.id=:id", Person.class)
+                .setParameter("email", email)
+                .setParameter("id", id)
                 .stream()
                 .findAny();
     }
